@@ -1,0 +1,11 @@
+//7.4.2기준 gradle/kotlin-dsl 에서 지원안함 
+
+tasks.register('configure'){
+    doLast{
+        def pos = new java.text.FieldPosition(10)
+        //Apply the script
+        apply from: 'other.gradle', to: pos
+        println pos.beginIndex
+        println pos.endIndex
+    }
+}
