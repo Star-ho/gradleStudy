@@ -1,0 +1,12 @@
+plugins {
+    `«plugin id»`                                                   // 1              
+    id(«plugin id»)                                                 // 2
+    id(«plugin id») version «plugin version» [apply «false»]        // 3
+}
+
+1 for core Gradle plugins
+2 for core Gradle plugins or plugins already available to the build script
+3 for binary Gradle plugins that need to be resolved
+
+3번케이스에서는 apply가 false설정 하여 기본 행동이 disable됨
+

@@ -1,0 +1,5 @@
+Gradle이 수행되면 buildSrc 디렉터리가 존재하는지 체크한다.
+이 경우 Gradle은 자동적으로 코드를 컴파일하고 테스트한 뒤 당신의 빌드 스크립트의 classpath에 넣는다.
+이 방법은 유지 보수, 리팩터링 및 코드 테스트가 더 쉽다.
+
+https://beomseok95.tistory.com/367
